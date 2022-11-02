@@ -54,3 +54,15 @@ img{
     margin:0;
 }
 
+.search {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    color: #707070;
+}
+
+input{
+    border: 0;
+    border-color:white;
+}
+
