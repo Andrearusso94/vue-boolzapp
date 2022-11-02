@@ -28,7 +28,7 @@
             <div class="container my-5">
                 <div class="row">
                     <div class="col-4 bg-white p-0">
-                        <div class="profile d-flex">
+                        <div class="profile d-flex justify-content-between">
                             <div class="avatar d-flex">
                                 <img src="./assets/img/avatar_io.jpg" class="rounded-circle av_img" alt="">
                                 <h5 class="my-4 mx-1">Sofia</h5>
@@ -50,6 +50,24 @@
                         <div class="search">
                             <i class="fas fa-search fa-sm fa-fw"></i>
                             <input type="text" placeholder=" Cerca o inizia una nuova chat" class="w-100 mx-2">
+                        </div>
+
+
+                        <div class="container_single_contacts d-flex flex-row">
+                            <ul class="w-100 p-0">
+                                <li v-for="contact in contacts" class="d-flex justify-content-between border">
+                                    <div class="d-flex">
+                                        <img :src="`${contact.avatar}.jpg`" alt="">
+                                        <div class="profile_name d-flex flex-column">
+                                            <h5 class="m-0">{{contact.name}}</h5>
+                                            <p class="m-0">Ultimo messaggio inviato</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <p>12:00</p>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
 
 
