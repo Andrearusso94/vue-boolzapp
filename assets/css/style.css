@@ -83,12 +83,19 @@ input{
     height: 100%;
 }
 
-.message_card_green {
+.message_card_right, .message_card_left {
     background-color: rgb(195, 253, 195);
-    padding: 1rem 2rem;
+    padding: 0.75rem;
     border-radius: 1rem;
     position: relative;
-    max-width: 40%;
+    width: 45%;
+    
+}
+.white{
+    background-color: rgb(250, 248, 248);;
+}
+.green {
+    background-color: rgb(195, 253, 195);
 }
 .msg-time {
     position: absolute;
@@ -97,4 +104,23 @@ input{
     display: flex;
     align-items: center;
     font-size: 0.75rem;
+}
+
+.text-chat {
+    padding: 0.5rem;
+}
+
+.input-text {
+    margin: 0.5rem;
+}
+
+.chat {
+    padding: 1rem
+}
+
+.chat p {
+    color:rgba(177, 177, 177, 1);
+}
+i{
+    color: rgba(177, 177, 177, 1);
 }
