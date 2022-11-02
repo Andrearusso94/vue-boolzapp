@@ -6,3 +6,51 @@
 body{
     background-color: rgba(0, 150, 136, 1);
 }
+
+img{
+    max-width: 100%;
+}
+
+.av_img{
+    width: 30%;
+    height: 70%;
+}
+
+.icon{
+    color: rgba(177, 177, 177, 1);
+    font-size: 2rem;
+}
+
+.active {
+    display: flex;
+    background-color: #8EDAFC;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.active i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #8EDAFC;
+    padding: .2rem;
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1rem;
+}
+
+.active h6 {
+    color: rgb(46, 46, 46);
+    font-size: 1rem;
+    margin:0;
+    
+}
+.active p {
+    color: #707070;
+    font-size: .8rem;
+    text-decoration: underline;
+    margin:0;
+}
+
