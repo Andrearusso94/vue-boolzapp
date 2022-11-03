@@ -7,6 +7,7 @@ createApp({
             
             activeUser: '',
             newMessage: '',
+            searchUser:'',
 
             contacts: [
                 {
@@ -202,6 +203,12 @@ createApp({
                                 status: 'received',
                             });
                     }, 1000);
+            },
+
+            okUser(){
+                return this.contacts.filter(element => {
+                    return element.name.toLowerCase().includes(this.searchUser.toLowerCase());
+                });
             },
     
 

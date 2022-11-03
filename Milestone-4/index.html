@@ -49,13 +49,13 @@
                         </div>
                         <div class="search">
                             <i class="fas fa-search fa-sm fa-fw"></i>
-                            <input type="text" placeholder=" Cerca o inizia una nuova chat" class="w-100 mx-2">
+                            <input type="text" placeholder=" Cerca o inizia una nuova chat" class="w-100 mx-2" v-model="searchUser">
                         </div>
 
 
                         <div class="container_single_contacts d-flex flex-row">
                             <ul class="w-100 p-0">
-                                <li v-for="contact in contacts" class="d-flex justify-content-between border"
+                                <li v-for="contact in okUser()" class="d-flex justify-content-between border"
                                     @click="thisActiveUser(contact)">
                                     <div class="d-flex">
                                         <img :src="`${contact.avatar}.jpg`" alt="">
@@ -64,7 +64,7 @@
                                             <p class="m-0">Ultimo messaggio inviato</p>
                                         </div>
                                     </div>
-                                    <div class="d-flex">
+                                    <div class="time d-flex">
                                         <p>12:00</p>
                                     </div>
                                 </li>
@@ -99,7 +99,7 @@
 
 
                         </div>
-                        <div class="chat d-flex">
+                        <div class="chat_text d-flex">
                         <div class="p-3">
                             <i class="fas fa-smile fa-sm fa-fw"></i>
                         </div>
