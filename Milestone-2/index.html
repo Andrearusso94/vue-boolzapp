@@ -55,7 +55,7 @@
 
                         <div class="container_single_contacts d-flex flex-row">
                             <ul class="w-100 p-0">
-                                <li v-for="contact in contacts" class="d-flex justify-content-between border">
+                                <li v-for="contact in contacts" class="d-flex justify-content-between border" @click="thisActiveUser(contact)">
                                     <div class="d-flex">
                                         <img :src="`${contact.avatar}.jpg`" alt="">
                                         <div class="profile_name d-flex flex-column">

@@ -168,10 +168,23 @@ createApp({
                             status: 'received'
                         }
                     ],
-                }
-            ]
+                },
+            ],
+            
+        
         }
-    }
+       
+
+    }, 
+    methods: {
+                thisActiveUser(contact) {
+                    console.log('account cliccato');
+                  this.activeUser = contact;
+                },
+            },
+    
+
+    
 
    
 
