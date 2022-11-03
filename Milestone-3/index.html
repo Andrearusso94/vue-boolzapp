@@ -103,7 +103,7 @@
                         <div class="p-3">
                             <i class="fas fa-smile fa-sm fa-fw"></i>
                         </div>
-                        <input type="text" placeholder="Scrivi un messaggio" class="w-100 h-100 input-text m-0">
+                        <input type="text" placeholder="Scrivi un messaggio" class="w-100 h-100 input-text m-0" @keyup.enter="addNewMessage()" v-model="newMessage">
 
                         <i class="my-4 fas fa-microphone fa-sm fa-fw"></i>
                     </div>

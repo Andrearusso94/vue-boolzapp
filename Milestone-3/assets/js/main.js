@@ -6,6 +6,7 @@ createApp({
         return {
             
             activeUser: '',
+            newMessage: '',
 
             contacts: [
                 {
@@ -181,6 +182,17 @@ createApp({
                     console.log('account cliccato');
                   this.activeUser = contact;
                 },
+
+                addNewMessage(){
+                    console.log(this.newMessage);
+                    this.activeUser.messages.push(
+                        {
+                            message: this.newMessage,
+                            status: 'sent',
+                        });
+        
+                        this.newMessage = "";
+                }
             },
     
 
