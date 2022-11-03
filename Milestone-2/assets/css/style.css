@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+body{
+    background-color: rgba(0, 150, 136, 1);
+}
+
+img{
+    max-width: 100%;
+}
+
+.av_img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.icon{
+    color: rgba(177, 177, 177, 1);
+    font-size: 2rem;
+}
+
+.active {
+    display: flex;
+    background-color:rgb(159, 247, 252);
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.active i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgb(250, 248, 248);
+    color:rgb(159, 247, 252);
+    padding: .2rem;
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1rem;
+}
+
+.active h6 {
+    color: rgb(46, 46, 46);
+    font-size: 1rem;
+    margin:0;
+    
+}
+.active p {
+    color:rgba(177, 177, 177, 1);
+    font-size: .8rem;
+    text-decoration: underline;
+    margin:0;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    color: rgba(177, 177, 177, 1);
+}
+
+input{
+    border: 0;
+    border-color:white;
+}
+
+.container_single_contacts img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.profile_chat img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.chat_content {
+    background-image: url(/assets/img/mine.jpg);
+    height: 100%;
+}
+
+.message_card_right, .message_card_left {
+    background-color: rgb(195, 253, 195);
+    padding: 0.75rem;
+    border-radius: 1rem;
+    position: relative;
+    width: 45%;
+    
+}
+.white{
+    background-color: rgb(250, 248, 248);;
+}
+.green {
+    background-color: rgb(195, 253, 195);
+}
+.msg-time {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 0.75rem;
+}
+
+.text-chat {
+    padding: 0.5rem;
+}
+
+.input-text {
+    margin: 0.5rem;
+}
+
+.chat {
+    padding: 1rem
+}
+
+.chat p {
+    color:rgba(177, 177, 177, 1);
+}
+i{
+    color: rgba(177, 177, 177, 1);
+}
