@@ -76,8 +76,8 @@
                     <div class="col-8 d-flex flex-column  bg-white">
                         <div class="chat d-flex justify-content-between">
                             <div class="profile_chat d-flex">
-                                <img src="./assets/img/avatar_1.jpg" alt="">
-                                <h5 class="my-3">Michele</h5>
+                                <img :src="`${activeUser.avatar}.jpg`" alt="">
+                                <h5 class="my-3">{{activeUser.name}}</h5>
                             </div>
                             <div class="chat_icons d-flex
                             my-2">
