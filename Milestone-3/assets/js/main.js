@@ -192,11 +192,20 @@ createApp({
                         });
         
                         this.newMessage = "";
-                }
+                },
+                receivedMessage() {
+                    console.log(this.receivedMessage);
+                    setTimeout(() => {
+                        this.activeUser.messages.push(
+                            {
+                                message: 'ok',
+                                status: 'received',
+                            });
+                    }, 1000);
             },
     
 
-    
+        }
 
    
 
