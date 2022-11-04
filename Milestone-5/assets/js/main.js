@@ -212,7 +212,7 @@ createApp({
                 });
             },
             isDone(index) {
-               this.message.splice(index, 1)
+               this.activeUser.messages.splice(index, 1)
             },
     
 
